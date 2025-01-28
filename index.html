@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Accueil - Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <span class="logo">Mon portfolio</span>
+        </div>
+        <nav>
+            <a href="#a-propos">À propos</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="a-propos" class="a-propos">
+            <div class="container">
+                <div class="texte">
+                    <h1>À propos de moi</h1>
+                    <p>
+                        Passionné de nouvelles technologies et de mécanique : Identifier un besoin, c'est bien, le solutionner, c'est mieux !
+                    </p>
+                </div>
+                <img src="media/Photo de moi.jpg" alt="Photo de moi" />
+            </div>
+        </section>
+
+        <section id="projets" class="accueil-photos">
+            <h2>Mes projets</h2>
+
+            <!-- Trait visuel entre les projets -->
+            <hr class="project-divider">
+
+            <!-- Premier projet avec vidéos -->
+            <div class="projet">
+                <div class="texte-container">
+                    <p>Conception (SolidWorks) + Programmation Arduino d'une machine d'essais mécaniques 2 en 1 (flèche & torsion) : prototype compact, transportable, à destination des étudiants ingénieurs en mécanique des matériaux</p>
+                </div>
+                <div class="video-container">
+                    <video width="100%" autoplay muted loop>
+                        <source src="media/Mesure fleche.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+                <div class="texte-container">
+                    <p>Application d'un effort au centre d'une éprouvette pour mesurer la flèche et en déduire le module d'élasticité</p>
+                </div>
+            </div>
+
+            <!-- Deuxième vidéo du premier projet -->
+            <div class="projet">
+                <div class="video-container">
+                    <video width="100%" autoplay muted loop>
+                        <source src="media/Mesure torsion.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+                <div class="texte-container">
+                    <p>Application d'un effort de torsion aux extrémités d'une éprouvette pour mesurer sa résistance en torsion</p>
+                </div>
+            </div>
+
+            <!-- Trait visuel entre les projets -->
+            <hr class="project-divider">
+
+            <!-- Troisième projet avec photo -->
+            <div class="photo">
+                <p>Conception (Inventor) d'un outil électroportatif de serrage au couple pour connecteurs micro-D de différentes tailles : Impression 3D titane</p>
+                <img src="media/Outil micro-D.png" alt="Outil micro-D" />
+            </div>
+
+            <!-- Trait visuel entre les projets -->
+            <hr class="project-divider">
+
+            <!-- Quatrième projet avec vidéo -->
+            <div class="projet">
+                <div class="texte-container">
+                    <p>Modélisation du mouvement d'un piston (SolidWorks)</p>
+                </div>
+                <div class="video-container">
+                    <video width="100%" autoplay muted loop>
+                        <source src="media/Moteur2tps.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Trait visuel entre les projets -->
+            <hr class="project-divider">
+
+        </section>
+
+        <section id="contact" class="section-contact">
+            <div class="container">
+                <h2>Contactez-moi</h2>
+                <form method="get" action="">
+                    <div class="form-nom-email">
+                        <div class="form-column">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" />
+                        </div>
+                        <div class="form-column">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10"></textarea>
+                    <input type="submit" value="Envoyer" class="cta" />
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo-container">
+            <span class="logo">© portfolio 2025</span>
+        </div>
+        <div class="social-links">
+            <a target="_blank" href="https://www.linkedin.com/in/brice-bouvier-a6b108176/" class="linkedin-logo">
+                <img src="media/Logo LinkedIn.png" alt="Logo LinkedIn" />
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
