@@ -149,10 +149,12 @@ footer .linkedin-logo img {
 
 .photo {
     text-align: center;
+    width: 50%;
+    margin: 0 auto; /* Centre l'image horizontalement */
 }
 
 .photo img {
-    width: 30%;
+    width: 75%;
     height: auto;
     border-radius: 8px;
     margin: 0 auto; /* Centre l'image horizontalement */
